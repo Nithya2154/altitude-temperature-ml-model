@@ -1,1 +1,91 @@
+# Altitude-Temperature Regression Analysis
 
+## Project Overview
+This is a **data science project** demonstrating **linear regression** using Python.  
+The goal is to analyze the relationship between **altitude (m)** and **temperature (°C)**, fit a regression model, and predict temperature at specific altitudes.
+
+The project includes:
+- Loading the dataset (`temp.csv`)
+- Fitting a linear regression model using `scikit-learn`
+- Calculating slope (coefficient) and intercept
+- Predicting temperature at 1200 meters
+- Visualizing data points and the regression line with Matplotlib
+
+---
+
+## Dataset: `temp.csv`
+`temp.csv` contains measurements of altitude and corresponding temperature.
+
+**Columns:**
+
+| Column       | Type    | Description                        |
+|-------------|---------|------------------------------------|
+| Altitude    | Integer | Altitude above sea level in meters |
+| Temperature | Float   | Temperature at that altitude (°C)  |
+
+**Sample data:**
+```csv
+Altitude,Temperature
+0,30
+500,27
+1000,24
+1500,21
+2000,18
+Purpose:
+The dataset is used to train the regression model and demonstrate predictions at new altitudes.
+
+Requirements
+Python 3.x
+
+Libraries:
+
+numpy
+
+pandas
+
+scikit-learn
+
+matplotlib
+
+Install the required packages using:
+
+bash
+Copy code
+pip install numpy pandas scikit-learn matplotlib
+How to Run
+Make sure regression.py (or your Python script) and temp.csv are in the same folder.
+
+Open a terminal or command prompt and run:
+
+bash
+Copy code
+python regression.py
+Output will display:
+
+Slope (coefficient)
+
+Intercept
+
+Predicted temperature at 1200m
+
+A plot window will open showing:
+
+Blue points: Data points
+
+Red line: Regression line
+
+Green point: Predicted temperature at 1200m
+
+Project Structure
+bash
+Copy code
+project-folder/
+ ├── regression.py       # Python script with linear regression
+ ├── temp.csv            # Dataset
+ └── README.md           # Project description
+Author
+Nithyanantham G
+Data Science Portfolio / Learning Project
+
+License
+This project is open for educational purposes
